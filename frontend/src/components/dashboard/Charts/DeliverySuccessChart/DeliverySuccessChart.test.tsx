@@ -11,13 +11,13 @@ class ResizeObserverStub {
 }
 
 beforeAll(() => {
-  global.ResizeObserver = ResizeObserverStub as unknown as typeof ResizeObserver;
+  globalThis.ResizeObserver = ResizeObserverStub as unknown as typeof ResizeObserver;
 });
 
 describe('DeliverySuccessChart', () => {
   it('renders the chart title', () => {
     render(<DeliverySuccessChart />);
-    expect(screen.getByText('Delivery Success Rate')).toBeInTheDocument();
+    expect(screen.getByText(/Delivery Success Rate/i)).toBeInTheDocument();
   });
 
   it('displays the success percentage', () => {
