@@ -8,7 +8,6 @@ import Shipments from './pages/Shipments/Shipments';
 import BlockchainLedger from './pages/BlockchainLedger/BlockchainLedger';
 import Settlements from './pages/Settlements/Settlements';
 import Analytics from './pages/Analytics/Analytics';
-import Settings from './pages/Settings/Settings';
 import UserManagement from './pages/dashboard/Company/UserManagement/UserManagement';
 import CompanySettings from './pages/dashboard/Company/Settings/CompanySettings';
 import HelpCenter from './pages/HelpCenter/HelpCenter';
@@ -67,10 +66,6 @@ const router = createBrowserRouter([
           {
             path: '/dashboard/settings',
             element: <CompanySettings />,
-          },
-          {
-            path: '/dashboard/settings',
-            element: <Settings />,
           },
           {
             path: '/dashboard/team',
