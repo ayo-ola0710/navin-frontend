@@ -133,6 +133,8 @@ cd frontend && pnpm run test
 ```
 **Status:** 34/36 tests passed
 - 2 failures in `TrackingTimeline.test.tsx` (pre-existing, unrelated to migration)
+- **Important:** These test failures existed BEFORE this PR and are in a component we did NOT modify
+- See `docs/TEST_FAILURES_NOTE.md` for detailed explanation
 
 ### TypeScript
 **Status:** ✅ No errors in migrated components
